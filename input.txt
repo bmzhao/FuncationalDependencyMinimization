@@ -1,0 +1,8 @@
+e,ns
+nl,emd
+en,lcd
+c,s
+d,m
+m,d
+epd,ae
+nlcp,a
