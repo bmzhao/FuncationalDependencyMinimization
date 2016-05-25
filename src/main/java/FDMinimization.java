@@ -8,15 +8,16 @@ import java.util.*;
 /**
  * Created by brianzhao on 5/23/16.
  */
-public class Main {
+public class FDMinimization {
     public static void main(String[] args) {
 
-        File input = new File("input.txt");
+        File input = new File("input2c.txt");
         Scanner scanner = null;
         try {
             scanner = new Scanner(input);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
+            System.exit(-1);
         }
 
         List<FD> fds = new ArrayList<>();
