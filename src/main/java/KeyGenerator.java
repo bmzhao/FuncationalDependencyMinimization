@@ -10,12 +10,12 @@ public class KeyGenerator {
     private final Set<Character> universe;
     private final Set<FD> functionalDependencies;
 
-    public KeyGenerator(Set<FD> functionalDependencies, Set<Character> universe) {
-        this.functionalDependencies = functionalDependencies;
-        this.universe = universe;
+    public KeyGenerator(Collection<FD> functionalDependencies, Collection<Character> universe) {
+        this.functionalDependencies = new HashSet<>(functionalDependencies);
+        this.universe = new HashSet<>(universe);
     }
 
-    public Set<Set<Character>> getKeys(){
+    public Set<Set<Character>> getKeys() {
         Set<Character> potentialKeyElements = new HashSet<>(universe);
         Collection<List<Character>> permutations = Collections2.permutations(potentialKeyElements);
         Set<Set<Character>> keys = new HashSet<>();
@@ -44,7 +44,6 @@ public class KeyGenerator {
             universe.add(attribute);
         }
         universe.remove('F');
-
 
 
         Set<Character> potentialKeyElements = new HashSet<>(universe);

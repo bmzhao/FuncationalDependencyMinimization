@@ -1,3 +1,4 @@
+SCGNEAM
 S,N
 S,E
 S,A

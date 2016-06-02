@@ -63,4 +63,22 @@ public class FD {
 //    public String toString() {
 //        return fdListToString(lhs) + " \\rightarrow " + fdListToString(rhs);
 //    }
+
+    public static void main(String[] args) {
+        List<Character> a = new ArrayList<>(Arrays.asList('a', 'c', 'c', 'd', 'a', 'd'));
+        System.out.println(a);
+
+        for (int i = 0; i < a.size()-1; i++) {
+            for (int j = i+1; j < a.size(); j++) {
+                if (a.get(i) == a.get(j)) {
+                    System.out.println(a.get(i));
+                    System.out.println(a.get(j));
+                    a.remove(j);
+                    j--;
+                    System.out.println(i + " " + j);
+                }
+            }
+        }
+        System.out.println(a);
+    }
 }
