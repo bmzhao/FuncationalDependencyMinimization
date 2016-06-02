@@ -8,10 +8,10 @@ import java.util.*;
 /**
  * Created by brianzhao on 5/23/16.
  */
-public class FDMinimization {
+public class FDUtils {
     public static void main(String[] args) {
 
-        File input = new File("input2c.txt");
+        File input = new File("hw63.txt");
         Scanner scanner = null;
         try {
             scanner = new Scanner(input);

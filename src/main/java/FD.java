@@ -54,13 +54,13 @@ public class FD {
     }
 
 
-//    @Override
-//    public String toString() {
-//        return fdListToString(lhs) + " -> " + fdListToString(rhs);
-//    }
-
     @Override
     public String toString() {
-        return fdListToString(lhs) + " \\rightarrow " + fdListToString(rhs);
+        return fdListToString(lhs) + " -> " + fdListToString(rhs);
     }
+
+//    @Override
+//    public String toString() {
+//        return fdListToString(lhs) + " \\rightarrow " + fdListToString(rhs);
+//    }
 }

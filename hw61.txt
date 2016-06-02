@@ -1,0 +1,5 @@
+S,N
+S,E
+S,A
+C,M
+SC,G
